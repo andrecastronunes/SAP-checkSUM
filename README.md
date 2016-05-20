@@ -44,7 +44,7 @@ Set objStartup = objWMIService.Get("Win32_ProcessStartup")
 Set objConfig = objStartup.SpawnInstance_
 objConfig.ShowWindow = HIDDEN_WINDOW
 Set objProcess = GetObject("winmgmts:root\cimv2:Win32_Process")
-errReturn = objProcess.Create("C:\Program Files\Java\j2re1.4.2\bin\java.exe" -classpath C:\SAPDownloadManager\DLManager.jar dlmanager.Application", null, objConfig, intProcessID)
+errReturn = objProcess.Create("C:\Program Files\Java\j2re1.4.2\bin\java.exe -classpath C:\SAPDownloadManager\DLManager.jar dlmanager.Application", null, objConfig, intProcessID)
 
 
 
