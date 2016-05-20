@@ -24,7 +24,7 @@ SUM stopped;18-05-2016 14:51:49
 
 This script should run at certain intervals in background.
 
-To avoid a command prompt window from showing up, the following screen can be used:
+To avoid a command prompt window from showing up, the following script can be used:
 
 Const HIDDEN_WINDOW = 12
 strComputer = "."
