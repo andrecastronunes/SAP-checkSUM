@@ -24,18 +24,7 @@ SUM stopped;18-05-2016 14:51:49
 
 This script should run at certain intervals in background.
 
-To avoid a command prompt window from showing up, the following script can be used:
-
-Const HIDDEN_WINDOW = 12
-strComputer = "."
-Set objWMIService = GetObject("winmgmts:" _
-    & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
-Set objStartup = objWMIService.Get("Win32_ProcessStartup")
-
-Set objConfig = objStartup.SpawnInstance_
-objConfig.ShowWindow = HIDDEN_WINDOW
-Set objProcess = GetObject("winmgmts:root\cimv2:Win32_Process")
-errReturn = objProcess.Create("C:\Program Files\Java\j2re1.4.2\bin\java.exe -classpath C:\SAPDownloadManager\DLManager.jar dlmanager.Application", null, objConfig, intProcessID)
+To avoid a command prompt window from showing up, the attached script runHidden.vbs can be used.
 
 
 
