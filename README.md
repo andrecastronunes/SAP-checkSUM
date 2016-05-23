@@ -12,6 +12,7 @@ For example, X:\usr\sap\SUM\abap\tmp\upalert.log
 
 A log called X:\usr\sap\SUM\abap\tmp\upalert.log.TXT is created with all the stops and starts.
 Example:
+
 SUM stopped;18-05-2016 10:45:10
 
 SUM running;18-05-2016 10:45:46
