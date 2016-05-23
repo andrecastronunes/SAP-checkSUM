@@ -2,7 +2,7 @@
 Script to monitor the SAP upgrade (whenever SUM is waiting for input).
 Usage:
 
-cscript checkSUM.vbs -file|-f <path\upalert.log> [-smtp <SMTP server>  -to|-t <semicolon separated e-mail addresses> -from <e-mail address>] [-verbose|-v]
+cscript checkSUM.vbs -file|-f <path\upalert.log> [-smtp "SMTP server">  -to|-t "semicolon separated e-mail addresses" -from "e-mail address"] [-verbose|-v]  (without the quotation marks...)
 
 checkSUM.vbs [-help|-?]
 
